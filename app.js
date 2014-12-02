@@ -22,12 +22,14 @@ var T = new Twit({
 
 app.get('/', function (req, res) {
     res.send('Hello World!');
-})
+});
 
-app.get('/search', function (req, res) {
+app.get('/search/twitter', function (req, res) {
     T.get('search/tweets', { q: 'competait', count: 1 }, function(err, data, response) {
         //res.send('Hello World!');
-        res.send(data);
+        res.send(data.statuses[0].user);
     });
 
-})
+});
+
+//https://graph.facebook.com/competait/
