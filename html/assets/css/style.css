@@ -1,0 +1,26 @@
+.twitterCard {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  padding: 3rem 1rem;
+  transition: 0.5s ease-in-out; }
+  .twitterCard h1, .twitterCard h2 {
+    transition: 0.8s ease-in-out; }
+  .twitterCard:hover {
+    text-shadow: 0 0 15px #000; }
+    .twitterCard:hover h1, .twitterCard:hover h2 {
+      color: #fff; }
+    .twitterCard:hover .background {
+      opacity: 0.9; }
+  .twitterCard .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+    transition: 0.5s ease-in-out; }
+
+/*# sourceMappingURL=style.css.map */

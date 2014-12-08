@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Firebas app</title>
+    <link rel="stylesheet" href="assets/bower_components/normalize-css/normalize.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body ng-app="fbNodeApp">
+<!--<div>-->
+    <!--<div ng-controller="basicController">-->
+        <!--Controller-->
+        <!--<ul>-->
+            <!--<li ng-repeat="item in items"><span>{{item.author}}</span><button ng-click="items.$remove(item)">X</button></li>-->
+        <!--</ul>-->
+
+        <!--&lt;!&ndash; push a new message into the array &ndash;&gt;-->
+        <!--<form ng-submit="addItems(newItemText)">-->
+            <!--<input ng-model="newItemText" />-->
+            <!--<button type="submit">add item</button>-->
+        <!--</form>-->
+    <!--</div>-->
+    <div ng-controller="twitterController">
+        <div class="twitterCard" style="color:#{{twitter.profile_text_color}};">
+            <img src="{{twitter.logo}}" alt="Twitter logo" style="max-width: 100%"/>
+            <p><h1>{{twitter.screen_name}}</h1> <h2>{{twitter.followers}} followers</h2></p>
+            <div class="background" style="background-image: url('{{twitter.banner}}');background-size: cover;background-repeat: no-repeat;"></div>
+        </div>
+    </div>
+
+</div>
+
+<script src="assets/bower_components/angular/angular.min.js"></script>
+<script src="assets/bower_components/firebase/firebase.js"></script>
+<script src="assets/bower_components/angularfire/dist/angularfire.min.js"></script>
+<script src="assets/bower_components/angular-route/angular-route.min.js"></script>
+<script src="assets/bower_components/angular-cookies/angular-cookies.min.js"></script>
+<script src="assets/bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="assets/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/controller/basic.controller.js"></script>
+</body>
+</html>
