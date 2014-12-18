@@ -6,6 +6,9 @@
     "twitter": "^0.2.13",
     "twit": "^1.1.18",
     "body-parser": "^1.10.0",
-    "firebase": "^2.0.5"
+    "firebase": "^2.0.5",
+    "request": "^2.49.0",
+    "fbgraph": "^0.3.0",
+    "facebook-open-graph": "^0.1.0"
   }
 }
